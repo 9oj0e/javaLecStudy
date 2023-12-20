@@ -11,7 +11,7 @@ public class OOPEx01 {
         System.out.println("p3의 몸무게: " + p3.weight);
 
         p3.weight = 60; // Not allowed. status should and must be updated by behavior.
-        // This isn't ungrammatical, but violates the code of OOP.
+        // This isn't ungrammatical, but violates the principles of OOP.
         System.out.println("p3의 몸무게: " + p3.weight);
     }
 }
