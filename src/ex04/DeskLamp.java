@@ -1,5 +1,5 @@
 package ex04;
-// 4-1
+// ex01
 public class DeskLamp {
     // declare an instance variable
     private boolean isOn;

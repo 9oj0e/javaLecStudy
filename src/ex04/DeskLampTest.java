@@ -1,5 +1,5 @@
 package ex04;
-// 4-1
+// ex01
 public class DeskLampTest {
     public static void main(String[] args) {
         // use 'new' to create an object.
