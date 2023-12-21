@@ -16,12 +16,12 @@ public class BankApp {
         Account loveAccount = new Account(3333, 1000, 3);
 
         // 3. read information
-        long amount = 100L;
+        long amount = 200;
 
         // 4. transfer
-        BankService.transfer(kildongAccount, geumseoAccount, 100);
-        BankService.transfer(geumseoAccount, loveAccount, 200);
-        BankService.transfer(loveAccount, kildongAccount, 300);
+        BankService.transfer(kildongAccount, geumseoAccount, amount);
+        BankService.transfer(geumseoAccount, loveAccount, amount);
+        //BankService.transfer(loveAccount, kildongAccount, amount);
 
         // 5. print the results
         System.out.println(kildongAccount);
@@ -29,5 +29,7 @@ public class BankApp {
         System.out.println(loveAccount);
 
         // 6. withdrawal
+        BankService.withdrawal(loveAccount, 500);
+        System.out.println(loveAccount);
     }
 }
