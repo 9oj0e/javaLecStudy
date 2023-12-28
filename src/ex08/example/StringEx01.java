@@ -1,24 +1,26 @@
 package ex08.example;
 
-import java.sql.SQLOutput;
-
 public class StringEx01 {
 
-    public static String encoding(String data) {
-        int A = data.indexOf("B") - data.indexOf("A");
-        int B = data.indexOf("C") - data.indexOf("B");
-        int C = data.indexOf("D") - data.indexOf("C");
-        int D = data.length() - data.indexOf("D");
-        return "A" + A + "B" + B + "C" + C + "D" + D;
-        // 2, 3, 4, 5
+    public static String encoding(String decodedData) {
+        String encodedData;
+        int A = decodedData.indexOf("B") - decodedData.indexOf("A");
+        int B = decodedData.indexOf("C") - decodedData.indexOf("B");
+        int C = decodedData.indexOf("D") - decodedData.indexOf("C");
+        int D = decodedData.length() - decodedData.indexOf("D");
+        encodedData = "A" + A + "B" + B + "C" + C + "D" + D;
+        return encodedData;
     }
 
-    public static String decoding(String encodedData) {
-        char[] arr = encodedData.toCharArray(); // [A, 2, B, 3, C, 4, D, 5]
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]);
-        }
-        return "";
+    public static String decoding(String encodedData) { // A2B3C4D5
+        String decodingData;
+        decodingData = encodedData.replaceAll("[^0-9]", "");
+        decodingData = decodingData.replaceAll("2", "AA");
+        decodingData = decodingData.replaceAll("3", "BBB");
+        decodingData = decodingData.replaceAll("4", "CCCC");
+        decodingData = decodingData.replaceAll("5", "DDDDD");
+        String decodedData = decodingData;
+        return decodedData;
     }
     public static void main(String[] args) {
         String data = "AABBBCCCCDDDDD"; // Byte -> 14Byte

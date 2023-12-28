@@ -1,7 +1,6 @@
-package ex07.example;
+package ex09.example;
 
 import javax.swing.*;
-import java.awt.*;
 
 class BasicFrame extends JFrame{
     public BasicFrame(){

@@ -6,7 +6,6 @@ class ContractInfo {
     private String name;
     private String tel;
     private String email;
-
     public ContractInfo(int money, String addr, String name, String tel, String email) {
         this.money = money;
         this.addr = addr;
@@ -14,7 +13,6 @@ class ContractInfo {
         this.tel = tel;
         this.email = email;
     }
-
     @Override
     public String toString() {
         return "ContractInfo{" +
@@ -25,23 +23,18 @@ class ContractInfo {
                 ", email='" + email + '\'' +
                 '}';
     }
-
     public int getMoney() {
         return money;
     }
-
     public String getAddr() {
         return addr;
     }
-
     public String getName() {
         return name;
     }
-
     public String getTel() {
         return tel;
     }
-
     public String getEmail() {
         return email;
     }
