@@ -1,10 +1,10 @@
 package ex09;
-// ex01
+// ex02
 import javax.swing.*;
 import java.awt.*;
 
 public class MyFrame extends JFrame {
-    public MyFrame() {
+    private MyFrame() {
         JPanel panel = new JPanel();
         panel.setBackground(Color.orange);
 
