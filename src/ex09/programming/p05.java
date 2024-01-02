@@ -12,17 +12,17 @@ public class p05 extends JFrame {
         JPanel panel2 = new JPanel();
         JPanel panel3 = new JPanel();
         JLabel tLabel = new JLabel("나의 BMI 지수는 얼마나 될까?");
-        JLabel bwLable = new JLabel("나의 체중(kg)");
-        JLabel hLable = new JLabel("나의 키(m)");
+        JLabel bwLabel = new JLabel("나의 체중(kg)");
+        JLabel hLabel = new JLabel("나의 키(m)");
         JTextField bwText = new JTextField(10);
         JTextField hText = new JTextField(10);
         JButton btn = new JButton("BMI 확인하기");
 
         panel1.add(tLabel);
         panel2.setLayout(new GridLayout(2, 2));
-        panel2.add(bwLable);
+        panel2.add(bwLabel);
         panel2.add(bwText);
-        panel2.add(hLable);
+        panel2.add(hLabel);
         panel2.add(hText);
 
         panel3.add(btn);
