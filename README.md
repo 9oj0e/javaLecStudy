@@ -21,4 +21,5 @@
 - GUI 기초 (12/28, 12/29)
 - Generic(01/03)
 - Thread(01/04)
-- Collectio(01/04)
+- Collection(01/04)
+- Copy(01/05)
