@@ -12,13 +12,11 @@ public class Client {
             Socket socket = new Socket("localhost", 20000);
 
             PrintWriter pw = new PrintWriter(socket.getOutputStream(), true);
-
             pw.println("1");
 
             BufferedReader br = new BufferedReader(
                     new InputStreamReader(socket.getInputStream())
             );
-
             String responseMsg = br.readLine();
             System.out.println("서버로 부터 받은 메시지 : " + responseMsg);
 
